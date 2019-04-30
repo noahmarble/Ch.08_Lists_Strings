@@ -10,9 +10,8 @@ months = "JanFebMarAprMayJunJulAugSepOctNovDec"
 
 '''
 months = "JanFebMarAprMayJunJulAugSepOctNovDec"
-done=False
-while not done:
+while True:
     userinput = int(input("enter a month numbers 1-12:"))
     print(months[(3*userinput-3):(3*userinput)])
-    if userinput==13:
+    if userinput>=13:
         break
