@@ -40,8 +40,13 @@ for i in range (3):
 from any e-mail address and print it. First ask the user for their e-mail address.
 '''
 email= input("Enter email:")
-list= [email]
-print(list[0:@])
+position =0
+for letter in email:
+    if letter=="@":
+        at_position=position
+    position+=1
+print(email[:at_position])
+
 
 
 '''
