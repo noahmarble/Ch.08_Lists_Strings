@@ -45,7 +45,7 @@ for letter in email:
     if letter=="@":
         at_position=position
     position+=1
-print(email[:at_position])
+print("username:", email[:at_position])
 
 
 
@@ -61,7 +61,6 @@ TEXT FORMATTING:
      '''
 score = 41237
 highscore = 1023407
-print("Score:      " + str(score) )
-print("High score: " + str(highscore) )
-
+print(f"Score: {score:,}")
+print(f"High score: {highscore:,}")
 
